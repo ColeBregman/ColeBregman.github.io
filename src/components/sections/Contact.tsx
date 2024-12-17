@@ -10,7 +10,7 @@ export function Contact() {
           Feel free to reach out if you'd like to connect or collaborate.
         </p>
         <a 
-          href="mailto:hello@example.com"
+          href="mailto:ctb2159@columbia.edu"
           className="inline-block px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
         >
           Say Hello

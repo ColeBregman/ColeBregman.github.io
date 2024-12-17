@@ -10,8 +10,8 @@ export function Hero() {
           with elegance and precision
         </h1>
         <p className="mt-8 text-xl text-gray-600 max-w-2xl">
-          Hi, I'm John Doe. I craft digital experiences that combine technical excellence 
-          with beautiful design. Currently building the future at TechCorp.
+          Hi, I'm Cole Bregman. I craft products that combine technical excellence 
+          with beautiful design. Currently studying Mechanical Engineering at Columbia University.
         </p>
         <div className="mt-12 animate-bounce">
           <ArrowDown size={24} />

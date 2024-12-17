@@ -48,11 +48,11 @@ export function Navigation() {
          className="text-gray-400 hover:text-black transition-colors">
         <Github size={20} />
       </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+      <a href="https://www.linkedin.com/in/cole-bregman/" target="_blank" rel="noopener noreferrer"
          className="text-gray-400 hover:text-black transition-colors">
         <Linkedin size={20} />
       </a>
-      <a href="mailto:hello@example.com"
+      <a href="mailto:ctb2159@columbia.edu"
          className="text-gray-400 hover:text-black transition-colors">
         <Mail size={20} />
       </a>
