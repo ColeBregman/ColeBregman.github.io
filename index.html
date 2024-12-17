@@ -19,9 +19,12 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <h2>Welcome to My Engineering Portfolio</h2>
-        <p>Mechanical Engineer | Innovator | Problem Solver</p>
+        <div class="hero-content">
+            <h1>Your Name</h1>
+            <p>Your tagline or role: <em>Mechanical Engineer | Innovator</em></p>
+        </div>
     </section>
+    
 
     <!-- Projects Section -->
     <section id="projects">
@@ -48,5 +51,17 @@
         <p>Email: <a href="mailto:radar12378@gmail.com.com">radar12378@gmail.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your Profile</a></p>
     </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+        </script>
+        
 </body>
 </html>

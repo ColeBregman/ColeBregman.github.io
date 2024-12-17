@@ -30,10 +30,44 @@ nav a {
 }
 
 /* Hero Section */
+/* Hero Section */
 #hero {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 4rem 2rem;
+    background-color: #f8f8f8; /* Light background */
 }
+
+.hero-content h1 {
+    font-size: 4rem; /* Large heading */
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0;
+    color: #666;
+}
+
+.hero-content em {
+    font-style: normal;
+    color: #888;
+}
+
+/* Optional: Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content {
+    animation: fadeIn 1.5s ease-out;
+}
+
 
 /* Projects */
 .grid-container {
