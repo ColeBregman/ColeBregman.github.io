@@ -2,7 +2,11 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+      exo2: ['Exo 2', 'serif'],
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

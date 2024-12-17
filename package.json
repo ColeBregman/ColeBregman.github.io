@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "lucide-react": "^0.468.0",
     "react-router-dom": "^6.22.3"
   },

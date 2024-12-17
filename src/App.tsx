@@ -4,6 +4,7 @@ import { Navigation } from './components/Navigation';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
 import { Projects } from './components/sections/Projects';
+import { Breadcrumbs } from './components/sections/Breadcrumbs';
 import { Contact } from './components/sections/Contact';
 import { ProjectDetail } from './pages/ProjectDetail';
 
@@ -13,6 +14,7 @@ function HomePage() {
       <Hero />
       <About />
       <Projects />
+      <Breadcrumbs />
       <Contact />
     </>
   );
@@ -23,7 +25,7 @@ export default function App() {
     <Router>
       <div className="min-h-screen bg-white">
         <Navigation />
-        <main className="max-w-6xl mx-auto md:pr-32">
+        <main className="w-screen mx-auto md:pr-32">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/project/:id" element={<ProjectDetail />} />

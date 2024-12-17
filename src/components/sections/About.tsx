@@ -5,7 +5,7 @@ export function About() {
     <section id="about" className="min-h-screen flex items-center px-6">
       <div className="max-w-4xl">
         <h2 className="text-3xl font-bold mb-8">About Me</h2>
-        <div className="space-y-6 text-lg text-gray-600">
+        <div className="space-y-3 text-lg text-gray-600">
           <p>
             With over a decade of experience in software engineering, I specialize in 
             building scalable applications that solve complex problems while maintaining 
