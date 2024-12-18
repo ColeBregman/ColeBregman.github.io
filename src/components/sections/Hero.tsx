@@ -3,6 +3,7 @@ import { ArrowDown } from 'lucide-react';
 import { ScrollingText } from '../animations/ScrollingText';
 import { useScrollVelocity } from '../../hooks/useScrollVelocity';
 import { useScrollDirection } from '../../hooks/useScrollDirection';
+import headshot from '../../images/headshot.png';
 
 export function Hero() {
   const scrollVelocity = useScrollVelocity();
@@ -12,7 +13,7 @@ export function Hero() {
     <section
       id="hero"
       className="h-screen flex items-center justify-center pt-16 px-0 bg-cover bg-center font-exo2 md:pr-[0px]"
-      style={{ backgroundImage: "url(../src/images/headshot.png)" }}
+      style={{ backgroundImage: `url(${headshot})` }}
     >
       <div className="w-full space-y-4 z-100">
         {/* Scrolling Text - Unaffected */}
