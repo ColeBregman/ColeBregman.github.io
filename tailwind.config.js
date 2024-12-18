@@ -4,11 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-      exo2: ['Exo 2', 'serif'],
+      exo2: ['"Exo 2"', 'serif'],
       },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
   ],
+
 };

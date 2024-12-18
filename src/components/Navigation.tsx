@@ -89,7 +89,7 @@ export function Navigation() {
       {showNav && (
         <nav className="navbar md:hidden fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm">
           <div className="flex items-center justify-between p-4">
-            <span className="text-xl font-semibold">JD</span>
+            <span className="text-xl font-semibold">CB</span>
             <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-gray-600 hover:text-black">
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -120,7 +120,7 @@ export function Navigation() {
 
       {/* Desktop Navigation */}
       {showNav && (
-        <nav className="navbar hidden md:block fixed right-8 top-1/2 -translate-y-1/2 z-50">
+        <nav className="navbar hidden md:block fixed right-2 top-1/2 -translate-y-1/2 z-[9999]">
           <div className="flex flex-col items-end gap-6">
             <div className="space-y-4">
               {sections.map(({ id, label }) => (

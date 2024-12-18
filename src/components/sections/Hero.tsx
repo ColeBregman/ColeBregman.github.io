@@ -9,27 +9,32 @@ export function Hero() {
   const scrollDirection = useScrollDirection();
 
   return (
-    <section id="hero" 
-      className="h-screen flex items-center justify-center px-6 bg-cover bg-center font-exo2"
-      style={{ backgroundImage: "../src/images/headshot.jpg" }}>
-      <div className="w-full space-y-2">
-        <div className="space-y-1">
+    <section
+      id="hero"
+      className="h-screen flex items-center justify-center pt-16 px-0 bg-cover bg-center font-exo2 md:pr-[0px]"
+      style={{ backgroundImage: "url(../src/images/headshot.png)" }}
+    >
+      <div className="w-full space-y-4 z-100">
+        {/* Scrolling Text - Unaffected */}
+        <div className="space-y-4">
           <ScrollingText
-            text="Cole Bregman --"
-            baseSpeed={0.5}
+            text="Cole Bregman — Cole Bregman — Cole Bregman —"
+            baseSpeed={0.75}
             direction={scrollDirection}
             scrollVelocity={scrollVelocity}
-            className="text-5xl md:text-7xl font-bold"
+            className="text-6xl md:text-9xl font-exo2 text-white"
           />
         </div>
-        
-        <p className="text-xl text-gray-600 max-w-2xl">
-          Hi, Cole Bregman. I craft products that combine technical excellence 
-          with beautiful design. Currently studying Mechanical Engineering at Columbia University.
-        </p>
-        
-        <div className="animate-bounce">
-          <ArrowDown size={24} />
+
+        {/* New Container for Moving Down */}
+        <div className="mt-16"> {/* Added margin-top to move this section down */}
+          <p className="text-xl text-gray-600 max-w-xl px-8 absolute bottom-16 text-white">
+            Hi. I create products. Currently studying Mechanical Engineering at Columbia University.
+          </p>
+
+          <div className="animate-bounce px-8 mt-8 absolute bottom-4 text-white">
+            <ArrowDown size={24} />
+          </div>
         </div>
       </div>
     </section>

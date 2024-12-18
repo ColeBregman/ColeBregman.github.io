@@ -19,7 +19,7 @@ export function ScrollingText({
   const containerRef = useRef<HTMLDivElement>(null);
   const positionRef = useRef(0);
   
-  const speed = baseSpeed * (1.5 + 3*Math.abs(scrollVelocity));
+  const speed = baseSpeed * (1.5 + 10*Math.abs(scrollVelocity));
 
   useAnimationFrame(() => {
     if (!containerRef.current) return;
@@ -37,7 +37,7 @@ export function ScrollingText({
   });
 
   return (
-    <div className="relative overflow-hidden whitespace-nowrap">
+    <div className="relative overflow-hidden whitespace-nowrap leading-none py-4">
       <div ref={containerRef} className={className}>
         <span className="inline-block">{text}</span>
         <span className="inline-block ml-8">{text}</span>

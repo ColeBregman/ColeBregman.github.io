@@ -2,7 +2,7 @@ import React from 'react';
 
 export function About() {
   return (
-    <section id="about" className="min-h-screen flex items-center px-6">
+    <section id="about" className="flex items-center px-6 md:pr-32 py-24">
       <div className="max-w-4xl">
         <h2 className="text-3xl font-bold mb-8">About Me</h2>
         <div className="space-y-3 text-lg text-gray-600">
