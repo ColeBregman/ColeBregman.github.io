@@ -28,7 +28,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'ai-analytics',
+    id: 'Optics',
     title: 'Live Optical Alignment and Automated Lense Testing',
     description: 'Revolutionizing data analysis with machine learning',
     image: 'https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?auto=format&fit=crop&w=1200&q=80',
@@ -50,7 +50,7 @@ export const projects: Project[] = [
         caption: 'Team collaboration'
       }
     ],
-    link: '/project/OpticsJig',
+    link: '/project/Optics',
     stats: [
       { label: 'Increased Laser Precision', value: '44.4%' },
       { label: 'Reduced Optical Alignment Time', value: '90%' },
@@ -73,8 +73,9 @@ export const projects: Project[] = [
       'Custom alert system'
     ]
   },
+
   {
-    id: 'smart-city',
+    id: 'AudiobookPlayer',
     title: 'Smart City Infrastructure',
     description: 'Building the foundation for tomorrow\'s cities',
     image: 'https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?auto=format&fit=crop&w=1200&q=80',
@@ -96,7 +97,7 @@ export const projects: Project[] = [
         caption: 'Energy optimization system'
       }
     ],
-    link: '/project/smart-city',
+    link: '/project/AudiobookPlayer',
     stats: [
       { label: 'IoT Devices', value: '10k+' },
       { label: 'Data Points', value: '1M/day' },
