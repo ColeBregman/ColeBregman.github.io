@@ -19,18 +19,18 @@ export function ProjectStory({ story }: ProjectStoryProps) {
       
       <div className="space-y-12">
         <div>
-          <h3 className="text-xl font-semibold mb-4">The Challenge</h3>
-          <p className="text-gray-600">{story.challenge}</p>
-        </div>
-        
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Our Approach</h3>
+          <h3 className="text-xl font-semibold mb-4">Approach & Implementation</h3>
           <p className="text-gray-600">{story.approach}</p>
         </div>
         
         <div>
-          <h3 className="text-xl font-semibold mb-4">The Outcome</h3>
+          <h3 className="text-xl font-semibold mb-4">Findings & Conclusion</h3>
           <p className="text-gray-600">{story.outcome}</p>
+        </div>
+        
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Takeaways and Reflection</h3>
+          <p className="text-gray-600">{story.challenge}</p>
         </div>
       </div>
     </section>

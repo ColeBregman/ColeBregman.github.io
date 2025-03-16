@@ -34,7 +34,7 @@ export function Hero() {
         {/* New Container for Moving Down */}
         <div className="mt-16"> {/* Added margin-top to move this section down */}
           <p className="text-xl text-gray-600 max-w-xl px-8 absolute bottom-16 text-white">
-            Hi. I create products. Currently studying Mechanical Engineering at Columbia University.
+            Hi, I create products. Currently studying Mechanical Engineering at Columbia University.
           </p>
 
           <div className="animate-bounce px-8 mt-8 absolute bottom-4 text-white">

@@ -7,14 +7,13 @@ export function About() {
         <h2 className="text-3xl font-bold mb-8">About Me</h2>
         <div className="space-y-3 text-lg text-gray-600">
           <p>
-            With over a decade of experience in software engineering, I specialize in 
-            building scalable applications that solve complex problems while maintaining 
-            elegant user experiences.
+            I'm a Mechanical Engineering student at Columbia University, also pursuing a minor in Computer Science. I love 
+            getting handson and making things—whether I'm prototyping in the Creative Machines Lab or conducting 
+            research in the Musculoskeletal Biomechanics Lab.
           </p>
           <p>
-            My expertise spans full-stack development, distributed systems, and 
-            cloud architecture. I'm passionate about clean code, performance optimization, 
-            and creating intuitive interfaces.
+            My favorite hobby is exploring new hobbies, whether that be embroidery, 3D modeling, or crocheting—my latest 
+            endeavor is learning bookbinding.
           </p>
         </div>
       </div>

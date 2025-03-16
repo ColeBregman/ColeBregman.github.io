@@ -11,35 +11,38 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Link 
       to={project.link}
-      className="group block relative overflow-hidden rounded-2xl hover:shadow-xl transition-all duration-300"
+      className="group block relative overflow-hidden rounded-none hover:shadow-xl transition-all duration-300"
     >
-      <div className="grid md:grid-cols-2 gap-8">
-        <div className="aspect-[4/3] overflow-hidden rounded-xl">
-          <img 
-            src={project.image} 
-            alt={project.title}
-            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-          />
+      <div className="relative aspect-[4/3]">
+        <img 
+          src={project.image} 
+          alt={project.title}
+          className="w-full h-full object-cover"
+        />
+        
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/0">
         </div>
         
-        <div className="flex flex-col justify-center">
-          <h3 className="text-2xl font-semibold flex items-center gap-2 mb-4">
+        {/* Text Content */}
+        <div className="absolute bottom-0 left-0 p-6 text-white">
+          <h3 className="text-3xl font-semibold mb-2">
             {project.title}
-            <ArrowUpRight size={20} className="inline-block opacity-0 group-hover:opacity-100 transition-opacity" />
           </h3>
           
-          <p className="text-gray-600 mb-6">{project.description}</p>
+          <p className="text-lg mb-8">{project.description}</p>
           
-          {project.stats && (
-            <div className="grid grid-cols-2 gap-4">
-              {project.stats.map((stat, index) => (
-                <div key={index} className="p-4 bg-gray-50 rounded-lg">
-                  <div className="text-sm text-gray-600">{stat.label}</div>
-                  <div className="text-lg font-semibold mt-1">{stat.value}</div>
-                </div>
-              ))}
-            </div>
-          )}
+          {/* Technology Tags */}
+          <div className="flex flex-wrap gap-2 mt-4">
+            {project.technologies && project.technologies.map((tech, index) => (
+              <span 
+                key={index} 
+                className="px-3 py-1 bg-black/30 text-white text-sm rounded"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </Link>

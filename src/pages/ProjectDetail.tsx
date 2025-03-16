@@ -30,7 +30,7 @@ export function ProjectDetail() {
           className="inline-flex items-center text-gray-600 hover:text-black mt-8"
         >
           <ArrowLeft size={20} className="mr-2" />
-          Back to projects
+          Back home
         </Link>
 
         <div className="mt-8">
@@ -83,12 +83,12 @@ export function ProjectDetail() {
 
           {project.technologies && (
             <div className="mt-12">
-              <h2 className="text-xl font-semibold mb-4">Technologies Used</h2>
+              <h2 className="text-xl font-semibold mb-4">Technologies & Skills</h2>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-gray-100 text-gray-800"
+                    className="px-4 py-2 bg-gray-100 text-gray-800 rounded-sm"
                   >
                     {tech}
                   </span>
@@ -106,8 +106,63 @@ export function ProjectDetail() {
             View Live Project
             <ExternalLink size={20} />
           </a>
+          
+          {/* Next Project Navigation */}
+          <div className="mt-24 pt-12 border-t border-gray-200">
+            <div className="flex justify-between items-center">
+              <div>Next Project</div>
+              <Link
+                to={getNextProjectLink(id)}
+                className="flex items-center gap-2 text-xl font-semibold hover:underline"
+              >
+                {getNextProjectTitle(id)}
+                <div className="ml-2">→</div>
+              </Link>
+            </div>
+            <Link to={getNextProjectLink(id)} className="block mt-8">
+              <img
+                src={getNextProjectImage(id)}
+                alt={getNextProjectTitle(id)}
+                className="w-full h-[300px] object-cover"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
   );
+}
+
+// Helper functions to get the next project
+function getNextProjectLink(currentId: string | undefined): string {
+  if (!currentId) return '/#projects';
+  
+  const currentIndex = projects.findIndex(p => p.id === currentId);
+  if (currentIndex === -1 || currentIndex === projects.length - 1) {
+    return `/project/${projects[0].id}`;
+  }
+  
+  return `/project/${projects[currentIndex + 1].id}`;
+}
+
+function getNextProjectTitle(currentId: string | undefined): string {
+  if (!currentId) return '';
+  
+  const currentIndex = projects.findIndex(p => p.id === currentId);
+  if (currentIndex === -1 || currentIndex === projects.length - 1) {
+    return projects[0].title;
+  }
+  
+  return projects[currentIndex + 1].title;
+}
+
+function getNextProjectImage(currentId: string | undefined): string {
+  if (!currentId) return '';
+  
+  const currentIndex = projects.findIndex(p => p.id === currentId);
+  if (currentIndex === -1 || currentIndex === projects.length - 1) {
+    return projects[0].image;
+  }
+  
+  return projects[currentIndex + 1].image;
 }

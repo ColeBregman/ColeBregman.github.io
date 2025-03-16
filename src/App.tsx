@@ -4,6 +4,7 @@ import { Navigation } from './components/Navigation';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
 import { Projects } from './components/sections/Projects';
+import { Experience } from './components/sections/Experience';
 import Breadcrumbs from './components/sections/Breadcrumbs';
 import { Contact } from './components/sections/Contact';
 import { ProjectDetail } from './pages/ProjectDetail';
@@ -14,6 +15,7 @@ function HomePage() {
       <Hero />
       <About />
       <Projects />
+      <Experience />
       <Breadcrumbs />
       <Contact />
     </>
