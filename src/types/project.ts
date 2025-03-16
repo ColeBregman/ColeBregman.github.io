@@ -30,24 +30,24 @@ export const projects: Project[] = [
   {
     id: 'Optics',
     title: 'Live Optical Alignment and Automated Lense Testing',
-    description: 'Revolutionizing data analysis with machine learning',
-    image: 'https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?auto=format&fit=crop&w=1200&q=80',
+    description: 'Speeding up the microscope development for optical engineers',
+    image: '/assets/OpticsJig-Cl6gbkTQ.png',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Real-time dashboard visualization'
+        url: '/assets/GUI-D1tlHbqh.png',
+        caption: 'GUI Analysis Interface'
       },
       {
-        url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
+        url: '/assets/Data1-Cd0dS5nb.png',
         caption: 'Data processing pipeline'
       },
       {
-        url: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Machine learning model training'
+        url: '/assets/Data2-BDjiV9sT.png',
+        caption: 'Data visualization'
       },
       {
-        url: 'https://images.unsplash.com/photo-1509475826633-fed577a2c71b?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Team collaboration'
+        url: '/assets/PriorGUI-CfGspTeB.png',
+        caption: 'Prior Interface'
       }
     ],
     link: '/project/Optics',
@@ -76,25 +76,25 @@ export const projects: Project[] = [
 
   {
     id: 'AudiobookPlayer',
-    title: 'Smart City Infrastructure',
-    description: 'Building the foundation for tomorrow\'s cities',
-    image: 'https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?auto=format&fit=crop&w=1200&q=80',
+    title: 'Audiobook Player',
+    description: 'Coming soon...',
+    image: '/assets/coverimage-DtUrAx8Y.png',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1494522358652-f30e61a60313?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Smart traffic management system'
+        url: '/assets/coverimage-DtUrAx8Y.png',
+        caption: 'Smart interface'
       },
       {
-        url: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=1200&q=80',
-        caption: 'IoT sensor network deployment'
+        url: '/assets/coverimage-DtUrAx8Y.png',
+        caption: 'Work in progress'
       },
       {
-        url: 'https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Real-time monitoring dashboard'
+        url: '/assets/coverimage-DtUrAx8Y.png',
+        caption: 'Coming soon'
       },
       {
-        url: 'https://images.unsplash.com/photo-1573167243872-43c6433b9d40?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Energy optimization system'
+        url: '/assets/coverimage-DtUrAx8Y.png',
+        caption: 'Under development'
       }
     ],
     link: '/project/AudiobookPlayer',
@@ -111,7 +111,7 @@ export const projects: Project[] = [
       approach: "We adopted an open-architecture approach, building modular components that could work independently or as part of the larger system. We worked closely with city planners and officials to ensure the solution met real-world needs.",
       outcome: "The platform has reduced traffic congestion by 30%, lowered energy consumption by 25%, and improved emergency response times by 45% across implemented cities."
     },
-    technologies: ['IoT', 'Node.js', 'MongoDB', 'Azure', 'TensorFlow', 'MQTT'],
+    technologies: ['Raspberry Pi', 'Python', 'CAD', '3D printing'],
     keyFeatures: [
       'Real-time traffic optimization',
       'Smart waste management',
@@ -120,8 +120,6 @@ export const projects: Project[] = [
       'Emergency response coordination'
     ]
   }
-
-
   
   // Add other projects here...
 ];
